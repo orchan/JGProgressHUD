@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.platforms     	= { :ios => "8.0", :tvos => "9.0" }
   s.source       	= { :git => "https://github.com/JonasGessner/JGProgressHUD.git", :tag => "v2.2" }
   s.source_files 	= "JGProgressHUD/JGProgressHUD/**/*.{h,m}"
+  s.resource_bundles = {'JGProgressHUD_Privacy' => ['JGProgressHUD/Assets/PrivacyInfo.xcprivacy']}
   s.frameworks 	 	= "Foundation", "UIKit", "QuartzCore"
   s.swift_version    	= "5.0"
   s.requires_arc 	= true
